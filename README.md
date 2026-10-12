@@ -97,9 +97,6 @@ curl -X PATCH "http://127.0.0.1:8000/products/1" \
 
 ### Удалить товар
 
-```bash
-curl -X DELETE "http://127.0.0.1:8000/products/1"
-```
 
 ## API endpoints
 
@@ -112,17 +109,10 @@ curl -X DELETE "http://127.0.0.1:8000/products/1"
 | PATCH | `/products/{product_id}` | Частично обновить товар |
 | DELETE | `/products/{product_id}` | Удалить товар |
 
-## Запуск тестов
-
-```bash
-python -m pytest
-```
-
-Тесты проверяют основные сценарии API: создание и получение товара, поиск и пагинацию, обновление, удаление, валидацию, дубликаты SKU и ответы для несуществующих товаров. Тестовая база создаётся во временной директории и не изменяет рабочую базу данных.
 
 ## Структура проекта
 
-```text
+
 inventory_management_api/
 ├── app/
 │   ├── __init__.py
@@ -132,12 +122,12 @@ inventory_management_api/
 ├── tests/
 │   └── test_api.py
 ├── examples/
-├── data/                  # создаётся автоматически при запуске
+├── data/                 
 ├── .gitignore
 ├── pyproject.toml
 ├── requirements.txt
 └── README.md
-```
+
 
 ## Возможные следующие улучшения
 
