@@ -1,0 +1,34 @@
+### Health check
+GET http://127.0.0.1:8000/health
+
+### Create a product
+POST http://127.0.0.1:8000/products
+Content-Type: application/json
+
+{
+  "name": "Mechanical Keyboard",
+  "sku": "KB-001",
+  "quantity": 12,
+  "price": 79.99,
+  "description": "Compact keyboard"
+}
+
+### List products
+GET http://127.0.0.1:8000/products?limit=20&offset=0
+
+### Search products
+GET http://127.0.0.1:8000/products?search=Keyboard
+
+### Get product
+GET http://127.0.0.1:8000/products/1
+
+### Update product
+PATCH http://127.0.0.1:8000/products/1
+Content-Type: application/json
+
+{
+  "quantity": 7
+}
+
+### Delete product
+DELETE http://127.0.0.1:8000/products/1
