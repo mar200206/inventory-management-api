@@ -23,25 +23,6 @@
 - Понятные HTTP-ошибки (`404`, `409`, `422`).
 - Документация API через Swagger UI.
 
-## Запуск локально
-
-Требуется Python 3.10 или новее.
-
-### 1. Создать виртуальное окружение
-
-Windows:
-
-```powershell
-py -m venv .venv
-.venv\Scripts\Activate.ps1
-```
-
-macOS / Linux:
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-```
 
 ### 2. Установить зависимости
 
